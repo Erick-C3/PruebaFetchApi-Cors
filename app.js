@@ -18,9 +18,9 @@ async function crearInfo() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                nombre: "prod1",
-                precio: -1,
-                imagen: "url inventada"
+                nombre: "Producto netlify",
+                precio: 99999,
+                imagen: "https://static-00.iconduck.com/assets.00/netlify-icon-2048x2048-xurlvzbi.png"
             })
         });
         const res = await info.json();
@@ -39,9 +39,9 @@ async function modificarInfo(id) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                nombre: "prod1 modif",
-                precio: -3,
-                imagen: "url inventada modif"
+                nombre: "prod4 modif",
+                precio: -4,
+                imagen: "url 4 inventada modif"
             })
         });
         const res = await info.json();
@@ -63,4 +63,4 @@ async function eliminarInfo(id) {
     }
 }
 
-obtenerInfo();
+crearInfo();
